@@ -35,7 +35,7 @@ public class MotorbikeControllerWeb {
     }
 
     @GetMapping("/{idMotorbike}")
-    public Optional<Motorbike> getMotorbike (@PathVariable("id") int id) {
+    public Optional<Motorbike> getMotorbike (@PathVariable("idMotorbike") int id) {
 
         return motorbikeServices.getMotorbike(id);
     }
